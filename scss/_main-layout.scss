@@ -1,0 +1,239 @@
+
+/*header_logo_search_nav*/
+
+header{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 48.07px 0px;
+    @media(max-width:768px){
+        padding: 20.5px 0px;
+    }
+    .logo_search{
+        display: flex;
+        align-items: center;
+        @media(max-width:768px){
+            padding: 0 12px;
+        }
+        .logo{
+            a{
+                display:inline-block;
+                width: 96px;
+                height: 28px;
+                background-image: url(../image/Frame.png);
+                text-indent: 101%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                margin-right: 36px;
+            }  
+        }
+        .search{
+            max-width: 276px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            @media(max-width:768px){
+                display: none;
+            }
+            input{
+                font-family: "Noto Serif TC", serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 28px;
+                padding: 12px 20px;
+                border: 1px solid #DEE2E6;
+                border-radius: 100px;
+                color: #ADB5BD;
+                position:absolute;
+            }
+            .search_ent{
+                display: block;
+                font-size: 25px;
+                position:relative;
+                left: 250px;
+                color:#569573;
+            }
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        .bars{
+            display: none;
+            @media(max-width:768px){
+                display: block;
+                margin-right: 12px;
+            }
+        }
+        .list{
+            display: flex;
+            gap: 20px;
+            @media(max-width:768px){
+                display: none;
+            }
+            li{
+                padding: 16px 24px;
+                a{
+                    font-family: "Noto Serif TC", serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    letter-spacing: 1.6px;
+                    color: #343A40;
+                    &:hover{
+                        color: #569573;
+                    }
+                }
+            }
+            .login_sign{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+                background-color: #569573;
+                border-radius: 100px;
+                a{
+                    color: white;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }      
+        }        
+    }
+}
+
+/*Banner*/
+.banner{
+    margin-bottom: 80px;
+    @media(max-width:768px){
+        margin-bottom: 24px;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+/*blog*/
+section{
+    nav{
+        padding:12px 0px;
+        margin-bottom: 20px;
+        @media(max-width:768px){
+            margin-bottom: 0px;
+        }
+        a{
+            color: #569573;
+            letter-spacing: 0.8px;
+            &:hover{
+                color: #6c757d;
+            }
+        }
+    }
+    h2{
+        margin-bottom: 16px;
+    }
+    time{
+        font-family: "Noto Serif TC", serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 1.6px;
+        color: #ADB5BD;
+    }
+    article{
+        margin-bottom: 100px;
+       .blog_ctn_paper_img_self{
+        display: flex;
+        gap: 24px;
+        @media(max-width:768px){
+            flex-direction: column;
+        }
+       }
+    }      
+}
+/*延伸閱讀*/
+.blog_ext_read{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    @media(max-width:768px){
+        width: 100%;
+        overflow: hidden;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 38.4px;
+        letter-spacing: 3.2px;
+    }
+    .blog_ext_read_ctn{
+        @media(max-width:768px){
+            width:300%;            
+            display: flex;
+        }
+        .blog_ext_read_ctn_list{
+            display: flex; 
+            flex: 0 0 100%;           
+            gap: 24px;
+            padding-bottom: 24px;
+            @media(max-width:768px){
+                width: 100%;
+                flex-direction: column;
+                transform: translateX(0);
+                &:nth-child(n+2){
+                    display: none;
+                }
+            }           
+            .blog_ext_read_ctn_img{
+                max-width: 23%;
+                @media(max-width:768px){
+                    max-width: 33%;
+                }
+            }
+            .blog_ext_read_ctn_paper{
+                max-width: 78%;
+                @media(max-width:768px){
+                    max-width: 33%;
+                }
+                h4{
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 2px;
+                    margin-bottom: 8px;
+                }
+                p{
+                    margin-bottom: 12px;
+                }
+                a{
+                    display: block;
+                    padding: 8px 0px;
+                    font-family: "Newsreader", serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 2px;
+                    color: #569573;
+                    text-align: right;
+                    &:hover{
+                        color: #343A40;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*footer*/
+
+footer{
+    padding: 24px 0;
+    border-top: 1px solid #ADB5BD;
+    p{
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+        color: #6E6B67;
+    }
+}
