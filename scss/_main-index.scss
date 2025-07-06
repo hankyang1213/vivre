@@ -206,25 +206,24 @@ section{
 .history{
     background-color: #fffbe5;
     padding: 40px 0px;
-    @media(max-width:768px){
-        padding: 0px 12px;
-        width: 100%;
-    }
     .history_ctn{
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
+        justify-content: space-between;
+        @media(max-width:960px){
+            padding: 0px 12px;
+            flex-direction: column;
+        }
         @media(max-width:768px){
             flex-direction: column;
         }
         .history_ctn_title{
-            width: 33%;
             @media(max-width:768px){
                 width: 100%;
                 text-align: center;
             }      
         }
         .history_ctn_list{
-            width: 67%;            
             @media(max-width:768px){
                 width: 100%;
             }
@@ -259,7 +258,11 @@ section{
                             }
                         }
                         .mon_ctn{
+                            max-width: 100%;
                             border-left: 1px solid #ADB5BD;
+                            @media(mim-width:768px){
+                                width: 100%;
+                            }
                         }
                     }     
                 }
@@ -271,12 +274,12 @@ section{
 /*vision*/
 .vision{
     padding: 80px 40px;
-    width: 856px;
+    max-width: 856px;
     display: flex;
     flex-direction: column;
     gap:36px;
     @media(max-width:768px){
-        padding: 40px 0px;
+        padding: 40px 10px;
         width: 100%;
     }
     h2{
