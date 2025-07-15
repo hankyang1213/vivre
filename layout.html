@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="scss/all.css">
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">   
 </head>
 <body>
     <!--頁首-->
@@ -21,18 +25,26 @@
                 </a>
             </div>
         </div>
-        <nav>
-            <a class="bars" href="##">
+        <a class="bars" href="##">
                 <i class="fa-solid fa-bars"></i>
-            </a>
+        </a>
+        <nav>
             <ul class="list">
                 <li><a href="##">所有文章</a></li>
                 <li><a href="##">訂閱方案</a></li>
                 <li><a href="index.html#about_us">關於我們</a></li>
                 <li class="login_sign"><a href="##">登入</a><span>/</span><a href="##">註冊</a></li>
             </ul>
-        </nav>
+        </nav>        
     </header>
+    <nav class="container slider">
+            <ul class="list">
+                <li><a href="##">所有文章</a></li>
+                <li><a href="##">訂閱方案</a></li>
+                <li><a href="index.html#about_us">關於我們</a></li>
+                <li class="login_sign"><a href="##">登入</a><span>/</span><a href="##">註冊</a></li>
+            </ul>
+    </nav>
     <!--Banner-->
     <div class="banner container">
         <img src="image/card2-img.png" alt="主頁">
@@ -74,35 +86,71 @@
         <!--延伸閱讀-->
         <section class="blog_ext_read container_blog">
             <h2>延伸閱讀</h2>
-            <div class="blog_ext_read_ctn">
-                <div class="blog_ext_read_ctn_list">
-                    <div class="blog_ext_read_ctn_img">
-                        <img src="image/card-img7.png" alt="">
+            <div class="blog_ext_read_des">
+                <div class="blog_ext_read_ctn">
+                    <div class="blog_ext_read_ctn_list item">
+                        <div class="blog_ext_read_ctn_img">
+                            <img src="image/card-img7.png" alt="">
+                        </div>
+                        <div class="blog_ext_read_ctn_paper">
+                            <h4>週末說走就走露營記</h4>
+                            <p class="blog_text_style">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+                            <a href="##">Read More</a>
+                        </div>
                     </div>
-                    <div class="blog_ext_read_ctn_paper">
-                        <h4>週末說走就走露營記</h4>
-                        <p class="blog_text_style">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
-                        <a href="##">Read More</a>
+                    <div class="blog_ext_read_ctn_list item">
+                        <div class="blog_ext_read_ctn_img">
+                            <img src="image/card-img8.png" alt="">
+                        </div>
+                        <div class="blog_ext_read_ctn_paper">
+                            <h4>城市野營日記</h4>
+                            <p class="blog_text_style">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...</p>
+                            <a href="##">Read More</a>
+                        </div>
+                    </div>
+                    <div class="blog_ext_read_ctn_list item">
+                        <div class="blog_ext_read_ctn_img">
+                            <img src="image/card-img9.png" alt="">
+                        </div>
+                        <div class="blog_ext_read_ctn_paper">
+                            <h4>和寵物去露營 - 大自然之旅的雙倍體驗</h4>
+                            <p class="blog_text_style">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
+                            <a href="##">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="blog_ext_read_ctn_list">
-                    <div class="blog_ext_read_ctn_img">
-                        <img src="image/card-img8.png" alt="">
+            </div>
+            <div class="blog_ext_read_rwd">
+                <div class="blog_ext_read_ctn owl-carousel owl-theme">
+                    <div class="blog_ext_read_ctn_list item">
+                        <div class="blog_ext_read_ctn_img">
+                            <img src="image/card-img7.png" alt="">
+                        </div>
+                        <div class="blog_ext_read_ctn_paper">
+                            <h4>週末說走就走露營記</h4>
+                            <p class="blog_text_style">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+                            <a href="##">Read More</a>
+                        </div>
                     </div>
-                    <div class="blog_ext_read_ctn_paper">
-                        <h4>城市野營日記</h4>
-                        <p class="blog_text_style">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...</p>
-                        <a href="##">Read More</a>
+                    <div class="blog_ext_read_ctn_list item">
+                        <div class="blog_ext_read_ctn_img">
+                            <img src="image/card-img8.png" alt="">
+                        </div>
+                        <div class="blog_ext_read_ctn_paper">
+                            <h4>城市野營日記</h4>
+                            <p class="blog_text_style">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...</p>
+                            <a href="##">Read More</a>
+                        </div>
                     </div>
-                </div>
-                <div class="blog_ext_read_ctn_list">
-                    <div class="blog_ext_read_ctn_img">
-                        <img src="image/card-img9.png" alt="">
-                    </div>
-                    <div class="blog_ext_read_ctn_paper">
-                        <h4>和寵物去露營 - 大自然之旅的雙倍體驗</h4>
-                        <p class="blog_text_style">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
-                        <a href="##">Read More</a>
+                    <div class="blog_ext_read_ctn_list item">
+                        <div class="blog_ext_read_ctn_img">
+                            <img src="image/card-img9.png" alt="">
+                        </div>
+                        <div class="blog_ext_read_ctn_paper">
+                            <h4>和寵物去露營 - 大自然之旅的雙倍體驗</h4>
+                            <p class="blog_text_style">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
+                            <a href="##">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,4 +161,5 @@
         <p>©Vivre 2024 All right Reserved</p>
     </footer>
 </body>
+<script src="js/all.js"></script>
 </html>
